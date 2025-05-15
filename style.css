@@ -1,0 +1,442 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* ===== Common Headings ===== */
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ===== Header Section ===== */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/banner.png) no-repeat center center/cover;
+}
+
+.header h1 {
+    font-size: 4vw;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* ===== Navbar ===== */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.register-btn {
+    background: #ff5361;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.5s;
+    text-decoration: none;
+    border: none;
+}
+
+.register-btn:hover {
+    background: #000;
+}
+
+.login-btn {
+    background: #ff5361;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.5s;
+    text-decoration: none;
+    margin-right: 10px;
+    border: none;
+}
+
+.login-btn:hover {
+    background: #ff5361;
+    border-color: #ff5361;
+    color: #fff;
+}
+
+/* ===== Search Bar ===== */
+.container {
+    padding: 0 7%;
+}
+
+.search-bar {
+    background: #fff;
+    width: 850px;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input {
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.location-input {
+    flex: 1;
+}
+
+.search-bar form label {
+    font-weight: 600;
+    display: block;
+    text-align: left;
+}
+
+.search-bar form button {
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search-bar form button:hover {
+    background: #000;
+}
+
+.search-bar form button img {
+    width: 15px;
+    margin-top: 7px;
+}
+
+/* ===== Image Slider ===== */
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 18s infinite ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@keyframes slide {
+    0%, 25% { transform: translateX(0%); }
+    30%, 55% { transform: translateX(-100%); }
+    60%, 85% { transform: translateX(-200%); }
+    90%, 100% { transform: translateX(0%); }
+}
+
+/* ===== Property Section ===== */
+.properties {
+    padding: 40px 20px;
+}
+
+.property {
+    background-color: #ff5361;
+    margin: 15px;
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid #fff;
+}
+
+.property:hover {
+    transform: scale(1.05);
+}
+
+.property img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.property h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.property p {
+    font-size: 1rem;
+}
+
+/* ===== Buttons ===== */
+button, .btn-primary {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ffffff;
+    color: #ff5361;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff5361;
+    color: #fff;
+}
+
+/* ===== Sections ===== */
+.sub-title {
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives, .trending, .stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.exclusives img, .trending div img, .stories div img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.exclusives div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* ===== Call to Action Section ===== */
+.cta {
+    margin: 10px 0;
+    background: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png) no-repeat center center/cover;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+.cta h3 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.cta p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn {
+    background: #ff5361;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background: rgb(78, 113, 189);
+}
+
+/* ===== Traveller's Stories ===== */
+.stories p {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* ===== About Message ===== */
+.about-msg {
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* ===== Footer ===== */
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+/* ===== Active Nav Link ===== */
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    background: #fff;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+/* ===== Responsive Design ===== */
+@media only screen and (max-width: 700px) {
+    .logo {
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #000;
+        padding: 100px 7% 0;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 100;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        display: block;
+    }
+    .register-btn {
+        margin: 15px 0 30px;
+    }
+    nav .fa-bars {
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        font-size: 28px;
+        color: #fff;
+    }
+    .hidemenu {
+        max-height: 300px;
+    }
+    .header h1 {
+        padding-top: 200px;
+        font-size: 7vw;
+    }
+    .search-bar {
+        width: 90%;
+        margin: auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+    }
+    .search-bar form {
+        display: block;
+    }
+    .search-bar form input {
+        width: 100%;
+        margin: 10px 0;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    .search-bar form button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}

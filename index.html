@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="onepage.css">
+  
+</head>
+
+<body>
+
+    <div class="header">
+        
+        <nav id="navbar">
+            <img src="images/logo2.png" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="myproperty.php" class="active">Properties</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+              
+            </ul>
+            <a href="landlord/signup.php" class="register-btn" target="action">Signup</a>
+            <a href="landlord/login1.html" class="login-btn" target="action">Login</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+        </nav>
+        <div class="container">
+           
+            <h1>Find Your Perfect Homes.</h1>
+            <marquee width="100%" direction="left" height="100px"><h2>
+                Browse through our extensive property listings and find the best rental properties.</h2>
+                </marquee>
+            <div class="search-bar">
+                <form>
+                    <div class="location-input">
+                        <label for="text">SEARCH..</label>
+                        <input type="text" placeholder="Where you want to stay?" id="text">
+                    </div>
+                    
+                    <button type="submit"><img src="images/search.png"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="featured-properties">
+        
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/banner 1.png" alt="Slide 1">
+                    <div class="text-overlay">Welcome to the First Slide</div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner 2.jpg" alt="Slide 2">
+                    <div class="text-overlay">Enjoy the Second Slide</div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner 4.jpg" alt="Slide 3">
+                    <div class="text-overlay">This is the Third Slide</div>
+                </div>
+            </div>
+        </div>
+         
+        
+    </section>
+
+    <section class="services">
+        <h3>Connect with Us</h3>
+        <h2>Our Services</h2>
+        <p>Finding Your Dream Rental Has Never Been Easier</p>
+        
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="images/image-3.png" alt="Verified Listings">
+                <h4>Verified Rental Listings</h4>
+                <p>Find 100% verified rental properties with complete details and images.</p>
+                <button>Explore Listings</button>
+            </div>
+            <div class="service-card">
+                <img src="images/image-1.png" alt="Location-Based Search">
+                <h4>Location-Based Search</h4>
+                <p>Easily find properties near your preferred location with smart filters.</p>
+                <button>Find Nearby Homes</button>
+            </div>
+            <div class="service-card">
+                <img src="images/image-4.png" alt="Secure Transactions">
+                <h4>Flexible Booking</h4>
+                <p>Schedule a house tour or book online with hassle-free options.</p>
+                <button type="button"><link rel="stylesheet" href="listing.html">Secure Your Rental</button>
+                
+            </div>
+        </div>
+    </section>
+
+
+        <div class="footer">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy; 2025 Shri Nivas - All Rights Reserved</p>
+        </div>
+    </div>
+    <script>
+
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+</body>
+
+</html>
